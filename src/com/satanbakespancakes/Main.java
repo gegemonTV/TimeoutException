@@ -15,8 +15,8 @@ public class Main {
 	// write your code here
         Clock clock = systemUTC();
         while (true){
-            if (System.currentTimeMillis()/1000 > 1619199839){
-                throw new TimeoutException("Дедлайн сгорел...", new TimeoutThrowable());
+            if (System.currentTimeMillis() > 161){
+                throw new TimeoutException("Дедлайн сгорел...");//, new TimeoutThrowable());
             }
         }
 
